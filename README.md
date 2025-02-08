@@ -1,7 +1,8 @@
-# VAEs for Disentanglement and Generating Spectral Data
+# VAEs for disentangled representation Learning and conditioned data generation of blood-based FTIR-spectra
 
 ## Description  
-This repository implements **Beta-VAE**, **Beta-TCVAE**, and their **Conditional Variants** for disentangled representation learning. The models include features such as mutual information estimation, cyclical annealing of loss terms, and utilities for data handling, training, and analysis.
+This repository implements **Beta-VAE**, **Beta-TCVAE**, and their **Conditional Variants** for disentangled representation learning and generative modelling.
+The repository allows the training of every combination of loss function (bvae or tcvae) and normal or conditional VAE on spectral data. The data cannot be provided.
 
 ---
 
@@ -30,7 +31,8 @@ Utilities for evaluating and analyzing model performance:
 
 ### **5. `trainer.py`**  
 Main script to configure hyperparameters, initialize the model, and start training with logging and model saving.
-Allows to start training with conditional or normal VAE and beta-vae or tcvae loss.
+Allows to start training with conditional or normal VAE and beta-vae or tcvae loss. Metrics, hyperparameters and state dictionaries
+will be saved to the log folder.
 
 ### **6. Jupyter Notebooks**  
 Two notebooks for loading data and models, analyzing logs, and visualizing results.  
